@@ -3,7 +3,6 @@
  * main - Entry point
  *
  * Returns: always 0
- *
  */
 int main(void)
 {
