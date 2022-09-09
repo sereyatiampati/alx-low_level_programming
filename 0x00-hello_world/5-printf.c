@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*
- *
+/**
+ * main - Entry point
  *
  * always returns 0
  *
