@@ -1,29 +1,27 @@
 #include "main.h"
 /**
- * _strncat - Funtion string.
- * @dest: Destiny value.
- * @src: String value.
- * @n: Number bytes.
- * Return: dest.
-*/
+ * _strncat - concats two arrays
+ *
+ * @dest: destination of concat
+ * @src: source array to concat
+ * @n: amount of times to append
+ *
+ * Return: char value
+ */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, src_lnt, dest_lnt;
-/* src 12 */
-	src_lnt = 0;
-	for (i = 0; src[i] != '\0'; i++)
-		src_lnt++;
-/* dest 1 */
-	dest_lnt = 0;
-	for (i = 0; dest[i] != '\0'; i++)
-		dest_lnt++;
-/* Number bytes n */
-	if (n > src_lnt)
-		n = src_lnt;
+	int i;
+	int j;
 
-	for (i = 0; i < n; i++)
-		dest[dest_lnt + i] = src[i];
-		dest[dest_lnt + i] = '\0';
+	for (j = 0; dest[j] != '\0'; j++)
+	{}
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+	{
+		dest[j + i] = src[i];
+	}
+	dest[j + i] = '\0';
 
 	return (dest);
+
 }
