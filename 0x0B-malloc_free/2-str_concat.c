@@ -1,51 +1,53 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- * _strlen - Function string.
- * @s: Value string check.
- * Return: String.
+ * str_concat - concats strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: return concated string
  */
-int _strlen(char *s)
-{
 
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-		;
-
-		return (i);
-
-}
-/**
- * str_concat - concatane two strings.
- * @s1: My first string.
- * @s2: My second string.
- * Return: Only both strings.
- */
 char *str_concat(char *s1, char *s2)
 {
+	int x, con1, con2;
+	char *conc;
 
-	int i, len1, len2;
-	char *cc;
-
+	x = 0;
+	con1 = 0;
+	con2 = 0;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-		len1 = _strlen(s1);
-		len2 = _strlen(s2);
+	while (s1[x] != '\0')
+	{
+		x++;
+		con1++;
+	}
 
-	cc = malloc(sizeof(char) * (len1 + len2 + 1));
-	if (cc == NULL)
+	x = 0;
+
+	while (s2[x] != '\0')
+	{
+		x++;
+		con2++;
+	}
+	conc = malloc(sizeof(char) * (con1 + con2 + 1));
+	if (conc == NULL)
 		return (NULL);
 
-	for (i = 0; i < len1; i++)
-		cc[i] = s1[i];
-	for (; i < len1 + len2; i++)
-		cc[i] = s2[i - len1];
-	cc[len1 + len2] = '\0';
+	for (x = 0; x < con1; x++)
+	{
+		conc[x] = s1[x];
+	}
 
-	return (cc);
-
+	for (x = 0; x < con2; x++)
+	{
+		conc[x + con1] = s2[x];
+	}
+	conc[x + con1] = '\0';
+	return (conc);
 }
