@@ -125,4 +125,4 @@ done
   </article>
 
 ## Author
-* **Samir millan** - [sereyatiampati](https://github.com/sereyatiampati)
+* **Sereya Tiampati** - [sereyatiampati](https://github.com/sereyatiampati)
