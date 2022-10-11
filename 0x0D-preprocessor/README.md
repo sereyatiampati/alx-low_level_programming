@@ -3,14 +3,14 @@ C
 Read or watch:
 
 <ul>
-Understanding C program Compilation Process
-Object-like Macros
-Macro Arguments
-Pre Processor Directives in C
-The C Preprocessor
-Standard Predefined Macros
-include guard
-Common Predefined Macros
+  <li>Understanding C program Compilation Process</li>
+  <li>Object-like Macros</li>
+  <li>Macro Arguments</li>
+  <li>Pre Processor Directives in C</li>
+  <li>The C Preprocessor</li>
+  <li>Standard Predefined Macros</li>
+  <li>include guard</li>
+  <li>Common Predefined Macros</li>
 </ul>
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
