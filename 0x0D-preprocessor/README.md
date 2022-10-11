@@ -41,3 +41,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <li>In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples</li>
 <li>Don’t forget to push your header file</li>
 <li>All your header files should be include guarded</li>
+  </ul>
