@@ -9,9 +9,8 @@
 struct dog
 {
 	char *name;
-	float age;
-	char *owner;
-};
+	float age;	char *owner;
+}dog_t;
 /**
  * dog_t - New elements dog.
  * @name: Dog name.
@@ -20,4 +19,5 @@ struct dog
  * @d: data.
 */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 #endif
