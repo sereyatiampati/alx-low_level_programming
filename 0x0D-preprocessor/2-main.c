@@ -2,5 +2,6 @@
 
 int main ()
 {
-	printf("2-main.c\n");
+	printf("%s\n", _FILE_);
+	return 0;
 }
