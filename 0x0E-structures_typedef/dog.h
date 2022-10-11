@@ -19,4 +19,4 @@ struct dog
  * @owner: Dog owner.
  * @d: data.
 */
-#endif 
+#endif
