@@ -1,18 +1,20 @@
 #include "lists.h"
 /**
- * free_listint2 - Function that frees a listint_t list.
- * @head: String list.
- * Return: null.
+ * free_listint2 - frees a list but head is null
+ * @head: linked list and head
+ *
  */
 void free_listint2(listint_t **head)
 {
+	listint_t *tmp;
 
-	if (head && *head)
-	{/*Recursion the funtion*/
-		free_listint2(&(*head)->next);
-			free(*head);
-/*Add NULL*/
-			*head = NULL;
+	if (head == NULL)
+		return;
+	while (*head != NULL)
+	{
+		tmp = *head;
+		free(*head);
+		*head = tmp->next;
 	}
-
+	*head = NULL;
 }

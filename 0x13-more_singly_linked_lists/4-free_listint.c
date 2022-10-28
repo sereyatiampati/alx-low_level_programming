@@ -1,16 +1,19 @@
 #include "lists.h"
 /**
- * free_listint - Function that frees a listint_t list.
- * @head: String list.
- * Return: 0.
+ * free_listint - frees the list
+ * @head: head of struct
+ *
  */
 void free_listint(listint_t *head)
 {
+	listint_t *tmp;
 
-	if (head)
-	{/*Recursion the funtion*/
-		free_listint(head->next);
-			free(head);
+
+	while (head != NULL)
+	{
+		tmp = head;
+		free(head);
+		head = tmp->next;
 	}
 
 }

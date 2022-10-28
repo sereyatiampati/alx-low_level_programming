@@ -1,22 +1,20 @@
 #include "lists.h"
 /**
- * pop_listint - Function that frees a listint_t list.
- * @head: String list.
- * Return: null.
-*/
+ * pop_listint - pops a node out
+ * @head: linked list address
+ * Return: head node data
+ */
 int pop_listint(listint_t **head)
 {
+	int value = 0;
+	listint_t *tmp;
 
-	int data;
-	listint_t *temp;
+	if (*head == NULL)
+		return (value);
+	tmp = *head;
+	value = tmp->n;
+	free(*head);
+	*head = tmp->next;
 
-	if (!head || !(*head))
-		return (0);
-
-	data = (*head)->n;
-	temp = *head;
-	*head = temp->next;
-	free(temp);
-
-		return (data);
+	return (value);
 }
